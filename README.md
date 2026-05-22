@@ -39,26 +39,28 @@ npm run dev
 
 ```
 
-### Create a new repository in GitHub and push the code to repo 
+### Create a new repository in GitHub and push the code to repo
 
-Open a new terminal window, navigate to your app's root folder (notesapp), and run the following commands to initialize a git and push the application to the new GitHub repo - 
+Open a new terminal window, navigate to your app's root folder (notesapp), and run the following commands to initialize a git and push the application to the new GitHub repo -
 
 ```
 git init
 git add .
 git commit -m "first commit"
-git remote add origin git@github.com:<your-username>/notesapp.git 
+git remote add origin git@github.com:<your-username>/notesapp.git
 git branch -M main
 git push -u origin main
 
 ```
-### install the Apmlify Packages 
+
+### install the Apmlify Packages
 
 ```
 npm create amplify@latest -y
 
 ```
-### Push your changes to Github 
+
+### Push your changes to Github
 
 ```
 git add .
@@ -66,6 +68,23 @@ git commit -m 'installing amplify'
 git push origin main
 
 ```
+
 ### Deploy the app with Amplify
 
+### Set up auth, data and storage resources
 
+### Deploy Amplify cloud sandbox
+
+#### Start the sandbox
+
+```
+npx ampx sandbox
+
+```
+
+### Install amplify libraries
+
+```
+npm install aws-amplify @aws-amplify/ui-react
+
+```
